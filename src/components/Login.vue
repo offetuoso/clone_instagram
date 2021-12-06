@@ -9,6 +9,7 @@
                             <div class="_9GP1n">
                                 <label class="form_labels">
                                     <input
+                                        id="form_id"
                                         aria-label="전화번호, 사용자 이름 또는 이메일"
                                         placeholder="전화번호, 사용자 이름 또는 이메일"
                                         aria-required="true"
@@ -41,19 +42,19 @@
                                         value=""
                                     />
                                     <span class="label_span">비밀번호</span>
-                                    <div id="button_box" v-html="viewPasswordBtn"></div>
+                                    <div id="button_box" ref="buttonBox" v-html="viewPasswordBtn"></div>
                                 </label>
                             </div>
                         </div>
                         <div class="submit_btn_box">
                             <button class="submit_btn" disabled="" type="submit">
-                                <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm">로그인</div>
+                                <div>로그인</div>
                             </button>
                         </div>
-                        <div class="K-1uj Z7p_S">
-                            <div class="s311c"></div>
-                            <div class="_0tv-g">또는</div>
-                            <div class="s311c"></div>
+                        <div class="other-option-box Z7p_S">
+                            <div class="other-option-bar"></div>
+                            <div class="other-option-label">또는</div>
+                            <div class="other-option-bar"></div>
                         </div>
                         <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm bkEs3 CovQj jKUp7 DhRcB">
                             <button class="sqdOP yWX7d y3zKF" type="button">
@@ -71,7 +72,7 @@
 </template>
 
 <script>
-const passwordVisible = false;
+let passwordVisible = false;
 
 export default {
     name: "Login",
@@ -79,32 +80,47 @@ export default {
         return { viewPasswordBtn: "" };
     },
     mounted() {
-        const input = document.querySelector("#form_password");
-        input.addEventListener("keyup", (e) => {
+        const inputId = document.querySelector("#form_id");
+        const inputPassword = document.querySelector("#form_password");
+
+        inputId.addEventListener("keyup", (e) => {
+            var pw = document.querySelector("#form_password");
+
+            document.querySelector(".submit_btn_box .submit_btn").classList.toggle("active", !!e.target.value && pw.value);
+        });
+
+        inputPassword.addEventListener("keyup", (e) => {
+            var id = document.querySelector("#form_id");
             if (!!e.target.value) {
-                console.log(11);
                 if (!passwordVisible) {
                     this.viewPasswordBtn =
-                        "<button class='changePwView' type='button'  style='border:0px; width: 100px; height:100%;'>비밀번호 표시</button>";
-                } else {
-                    this.viewPasswordBtn = "<button style='border:0px; width: 100px; height:100%;'>숨기기</button>";
-                }
-
-                const btn = document.querySelector(".changePwView");
-                if (btn) {
-                    /*
-                    btn.removeEventListener("click", clickHandler);
-                    btn.addEventListener("click", (e) => {
-                        e.preventDefault();
-                        alert(111);
-                    });
-                    */
+                        "<button class='change_mode' type='button'  style='border:0px; width: 100px; height:100%;    background-color: white;color: black; font-weight: bold;'>비밀번호 표시</button>";
                 }
             } else {
                 this.viewPasswordBtn = "";
                 passwordVisible = false;
             }
+
+            document.querySelector(".submit_btn_box .submit_btn").classList.toggle("active", !!e.target.value && id.value);
         });
+
+        if (this.$refs["buttonBox"]) {
+            this.$refs["buttonBox"].addEventListener("click", function (event) {
+                event.preventDefault();
+                console.log("clicked: ", event.target.innerHTML, "passwordVisible", passwordVisible);
+                var pw = document.querySelector("#form_password");
+
+                if (!passwordVisible) {
+                    passwordVisible = true;
+                    event.target.innerHTML = "숨기기";
+                    pw.setAttribute("type", "text");
+                } else {
+                    passwordVisible = false;
+                    event.target.innerHTML = "비밀번호 표시";
+                    pw.setAttribute("type", "password");
+                }
+            });
+        }
     },
 };
 </script>
@@ -213,12 +229,63 @@ export default {
 }
 .login_contents .submit_btn_box .submit_btn {
     margin-top: 5px;
-    background-color: rgba(0, 149, 246);
+    background-color: #b2dffc;
     color: white;
     border-radius: 3px;
     opacity: 1;
     border: 0px;
     padding: 10px;
     width: 100%;
+    font-weight: bold;
+}
+
+.login_contents .submit_btn_box .active {
+    background-color: rgba(0, 149, 246) !important;
+}
+
+.other-option-box {
+    margin: 10px 40px 18px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: inherit;
+    height: 30px;
+}
+.other-option-bar {
+    float: left;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    background-color: #dbdbdb;
+    background-color: rgba(var(--b38, 219, 219, 219), 1);
+    height: 1px;
+    width: 38%;
+    position: relative;
+    top: 0.45em;
+}
+.other-option-label {
+    float: left;
+    color: #8e8e8e;
+    color: rgba(var(--f52, 142, 142, 142), 1);
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    text-transform: uppercase;
+    height: 24px;
+    width: 10%;
 }
 </style>
