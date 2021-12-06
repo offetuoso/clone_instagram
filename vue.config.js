@@ -1,6 +1,6 @@
 const path = require("path");
 module.exports = {
-    publicPath: process.env.NODE_ENV === "production" ? "/clone_instagram/" : "/",
+    publicPath: process.env.NODE_ENV === "production" ? "/clone_instagram/" : "/clone_instagram/",
     outputDir: path.resolve(__dirname, "./dist"),
 
     //   assetsDir: "./"
