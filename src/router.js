@@ -9,13 +9,6 @@ const routes = [
         },
     },
     {
-        path: "/clone_instagram/",
-        name: "Home",
-        component: function () {
-            return import(/* webpackChunkName: "Home" */ "./views/Home.vue");
-        },
-    },
-    {
         path: "/about",
         name: "About",
         component: function () {
