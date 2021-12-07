@@ -129,4 +129,22 @@ button {
 #nav a.router-link-exact-active {
     color: #42b983;
 }
+html {
+    -webkit-text-size-adjust: 100%;
+}
+.core_image {
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+}
+a:link {
+    color: red;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
 </style>
