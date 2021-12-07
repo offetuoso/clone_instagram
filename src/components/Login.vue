@@ -209,6 +209,7 @@ export default {
     position: relative;
     margin: 0;
     min-width: 0;
+    text-align: left;
 }
 
 .form_labels .label_span {
