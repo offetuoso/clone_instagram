@@ -4,7 +4,15 @@
     <Login msg="Welcome to Your Instagram"/> -->
         <main>
             <article>
-                <div class="sub-article"></div>
+                <div class="sub-article">
+                    <div class="img_box">
+                        <img alt="" class="imgs fadeOut" src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg" />
+                        <img alt="" class="imgs" src="https://www.instagram.com/static/images/homepage/screenshot2.jpg/6f03eb85463c.jpg" />
+                        <img alt="" class="imgs" src="https://www.instagram.com/static/images/homepage/screenshot3.jpg/f0c687aa6ec2.jpg" />
+                        <img alt="" class="imgs" src="https://www.instagram.com/static/images/homepage/screenshot4.jpg/842fe5699220.jpg" />
+                        <img alt="" class="imgs fadeIn" src="https://www.instagram.com/static/images/homepage/screenshot5.jpg/0a2d3016f375.jpg" />
+                    </div>
+                </div>
                 <div class="main-article">
                     <Login />
                 </div>
@@ -15,13 +23,49 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import Login from "@/components/Login.vue";
+let isFirst = true;
+let interval1;
 
 export default {
     name: "Home",
     components: {
         Login,
+    },
+    methods: {
+        fadeInImg() {
+            interval1 = setInterval(() => {
+                const fadeIn = document.querySelector("img.fadeIn");
+                const fadeOut = document.querySelector("img.fadeOut");
+                this.img_idx = (this.img_idx + 1) % 5;
+
+                if (fadeIn) {
+                    fadeIn.classList.remove("fadeIn");
+                }
+                if (fadeOut) {
+                    fadeOut.classList.remove("fadeOut");
+                }
+                document.querySelectorAll("img.imgs")[this.img_idx].classList.add("fadeOut");
+                document.querySelectorAll("img.imgs")[(this.img_idx + 1) % 5].classList.add("fadeIn");
+
+                //this.fadeOutImg();
+            }, 10000);
+        },
+    },
+    data() {
+        return {
+            img_idx: 0,
+            img_urls: [
+                "https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg",
+                "https://www.instagram.com/static/images/homepage/screenshot2.jpg/6f03eb85463c.jpg",
+                "https://www.instagram.com/static/images/homepage/screenshot3.jpg/f0c687aa6ec2.jpg",
+                "https://www.instagram.com/static/images/homepage/screenshot4.jpg/842fe5699220.jpg",
+                "https://www.instagram.com/static/images/homepage/screenshot5.jpg/0a2d3016f375.jpg",
+            ],
+        };
+    },
+    mounted() {
+        this.fadeInImg();
     },
 };
 </script>
@@ -77,5 +121,52 @@ export default {
     height: inherit;
     margin-top: 30px;
     /*background-color: aqua;*/
+}
+
+.app .home article .sub-article .img_box {
+    margin: 99px 0 0 151px;
+    background-color: white;
+    position: relative;
+}
+
+.app .home article .sub-article .img_box .imgs {
+    height: 427px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 240px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.1;
+    }
+}
+
+.app .home article .sub-article .img_box .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    visibility: visible;
+}
+
+.app .home article .sub-article .img_box .fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    visibility: visible;
 }
 </style>
