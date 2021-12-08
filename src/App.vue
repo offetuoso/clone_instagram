@@ -116,7 +116,12 @@ button {
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
 }
-
+@media (max-width: 875px) {
+    .app {
+        width: auto;
+        min-width: 0;
+    }
+}
 #nav {
     padding: 30px;
 }
