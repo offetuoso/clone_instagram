@@ -1,18 +1,7 @@
 <template>
     <section class="home">
-        <!-- <img alt="Vue logo" src="../assets/logo.png">
-    <Login msg="Welcome to Your Instagram"/> -->
         <main>
-            <article class="margin-center">
-                <div class="sub-article">
-                    <div class="img_box">
-                        <img alt="" class="imgs fadeOut" src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg" />
-                        <img alt="" class="imgs" src="https://www.instagram.com/static/images/homepage/screenshot2.jpg/6f03eb85463c.jpg" />
-                        <img alt="" class="imgs" src="https://www.instagram.com/static/images/homepage/screenshot3.jpg/f0c687aa6ec2.jpg" />
-                        <img alt="" class="imgs" src="https://www.instagram.com/static/images/homepage/screenshot4.jpg/842fe5699220.jpg" />
-                        <img alt="" class="imgs fadeIn" src="https://www.instagram.com/static/images/homepage/screenshot5.jpg/0a2d3016f375.jpg" />
-                    </div>
-                </div>
+            <article>
                 <div class="main-article">
                     <Login />
                 </div>
@@ -70,37 +59,37 @@ export default {
 };
 </script>
 <style scoped>
-.app section {
-    /* min-height: 102vh; */
-    overflow: hidden;
+.app .home {
     margin-top: 34px;
     margin-bottom: 34px;
     width: 80%;
     height: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .app footer {
     width: inherit;
     height: 10%;
     /*background-color: palevioletred;*/
 }
-.margin-center {
+.app .home > * {
     margin-left: auto;
     margin-right: auto;
 }
-/*
+
 .app .home main {
-    width: 88%;
-    height: 100%; 
-}*/
+    width: inherit;
+    height: 100%;
+}
 
 .app .home article {
     width: inherit;
     height: inherit;
     /*background-color: blue;*/
 }
-
 .app .home article .sub-article {
     float: left;
+    width: 454px;
     height: inherit;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
@@ -111,31 +100,12 @@ export default {
     -webkit-flex-basis: 454px;
     -ms-flex-preferred-size: 454px;
     flex-basis: 454px;
-    width: 454px;
-    height: 618px;
+    height: inherit;
     margin-left: 32px;
     margin-right: -15px;
 
     /*background-color: blueviolet;*/
 }
-
-@media (max-width: 875px) {
-    article .sub-article {
-        display: none;
-    }
-
-    .app section {
-        /* min-height: 102vh; */
-        overflow: hidden;
-        margin-top: 34px;
-        margin-bottom: 34px;
-        width: 350px !important;
-        height: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 .app .home article .main-article {
     float: left;
     width: 350px;
