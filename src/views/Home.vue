@@ -21,59 +21,82 @@
     </section>
     <footer>
         <div class="footer_box">
-            <div class="links qF0y9 Igw0E IwRSH eGOV_ _4EzTm kEKum">
-                <div class="qF0y9 Igw0E IwRSH YBx95 ybXk5 _4EzTm YlhBV">
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
+            <div class="link_box">
+                <div class="links">
+                    <div class="link">
                         <a href="https://about.facebook.com/meta" rel="nofollow noopener noreferrer" target="_blank"
-                            ><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">Meta</div></a
+                            ><div class="link_label">Meta</div></a
                         >
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
+                    <div class="link">
                         <a href="https://about.instagram.com/" rel="nofollow noopener noreferrer" target="_blank"
-                            ><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">소개</div></a
+                            ><div class="link_label">소개</div></a
                         >
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
+                    <div class="link">
                         <a href="https://about.instagram.com/blog/" rel="nofollow noopener noreferrer" target="_blank"
-                            ><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">블로그</div></a
+                            ><div class="link_label">블로그</div></a
                         >
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
-                        <a href="/about/jobs/"><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">채용 정보</div></a>
+                    <div class="link">
+                        <a href="https://www.instagram.com/about/jobs/"><div class="link_label">채용 정보</div></a>
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
+                    <div class="link">
                         <a href="https://help.instagram.com/" rel="nofollow noopener noreferrer" target="_blank"
-                            ><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">도움말</div></a
+                            ><div class="link_label">도움말</div></a
                         >
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
+                    <div class="link">
                         <a href="https://developers.facebook.com/docs/instagram" rel="nofollow noopener noreferrer" target="_blank"
-                            ><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">API</div></a
+                            ><div class="link_label">API</div></a
                         >
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
-                        <a href="/legal/privacy/"><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">개인정보처리방침</div></a>
+                    <div class="link">
+                        <a href="https://www.instagram.com/legal/privacy/"><div class="link_label">개인정보처리방침</div></a>
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
-                        <a href="/legal/terms/"><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">약관</div></a>
+                    <div class="link">
+                        <a href="https://www.instagram.com/legal/terms/"><div class="link_label">약관</div></a>
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
-                        <a href="/directory/profiles/"><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">인기 계정</div></a>
+                    <div class="link">
+                        <a href="https://www.instagram.com/directory/profiles/"><div class="link_label">인기 계정</div></a>
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
-                        <a href="/directory/hashtags/"><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">해시태그</div></a>
+                    <div class="link">
+                        <a href="https://www.instagram.com/directory/hashtags/"><div class="link_label">해시태그</div></a>
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
-                        <a href="/explore/locations/"><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">위치</div></a>
+                    <div class="link">
+                        <a href="https://www.instagram.com/explore/locations/"><div class="link_label">위치</div></a>
                     </div>
-                    <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _22l1 soMvl JI_ht">
-                        <a href="/web/lite/"><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">Instagram Lite</div></a>
+                    <div class="link">
+                        <a href="https://www.instagram.com/web/lite/"><div class="link_label">Instagram Lite</div></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="link">
+                        <a href="https://www.instagram.com/topics/beauty/"><div class="link_label">뷰티</div></a>
+                    </div>
+                    <div class="link">
+                        <a href="https://www.instagram.com/topics/dance-and-performance/"><div class="link_label">댄스</div></a>
+                    </div>
+                    <div class="link">
+                        <a href="https://www.instagram.com/topics/fitness/"><div class="link_label">피트니스</div></a>
+                    </div>
+                    <div class="link">
+                        <a href="https://www.instagram.com/topics/food-and-drink/"><div class="link_label">식음료</div></a>
+                    </div>
+                    <div class="link">
+                        <a href="https://www.instagram.com/topics/home-and-garden/"><div class="link_label">집 및 정원</div></a>
+                    </div>
+                    <div class="link">
+                        <a href="https://www.instagram.com/topics/music/"><div class="link_label">음악</div></a>
+                    </div>
+                    <div class="link">
+                        <a href="https://www.instagram.com/topics/visual-arts/"><div class="link_label">시각 예술</div></a>
                     </div>
                 </div>
             </div>
-            <div class="qF0y9 Igw0E IwRSH YBx95 ybXk5 _4EzTm _22l1 _49XvD">
-                <div class="_7UhW9 PIoXz MMzan KV-D4 uL8Hv">
-                    <span class="_3G4x7 RFk-t bwz9f"
+            <div class="etc_box">
+                <div class="language_part">
+                    <span class="language_box"
                         ><div class="TQUPK">
                             <span>한국어</span>
                             <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm WKY0a">
@@ -94,7 +117,7 @@
                                 ></span>
                             </div>
                         </div>
-                        <select aria-label="표시 언어 변경" class="hztqj">
+                        <select aria-label="표시 언어 변경" id="language_select" @change="fn_selectLanguage">
                             <option value="af">Afrikaans</option>
                             <option value="cs">Čeština</option>
                             <option value="da">Dansk</option>
@@ -147,7 +170,7 @@
                         </select></span
                     >
                 </div>
-                <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm _5VUwz"><div class="_7UhW9 PIoXz MMzan _0PwGv uL8Hv">© 2021 Instagram from Meta</div></div>
+                <div class="copyright_part"><div class="copyright">© 2021 Instagram from Meta</div></div>
             </div>
         </div>
     </footer>
@@ -181,6 +204,14 @@ export default {
 
                 //this.fadeOutImg();
             }, 10000);
+        },
+        fn_selectLanguage(e) {
+            var value = document.querySelector("#language_select").value; // 선택된 옵션 값 (selected option value)
+            var text = document.querySelector("#language_select option:checked").innerText; // 선택된 옵션 텍스트(selected option)
+
+            document.querySelector(".language_box > div > span").innerText = text; // 선택된 옵션 텍스트
+
+            console.log(value, text);
         },
     },
     data() {
@@ -218,25 +249,192 @@ export default {
 .app footer .footer_box {
     height: 100%;
     width: 966px;
-    background-color: palevioletred;
+    /*background-color: palevioletred;*/
     margin-left: auto;
     margin-right: auto;
 }
-.app footer .footer_box .links {
+.app footer .footer_box .link_box {
     height: 23px;
 }
-.app footer .footer_box .links > * {
-    float: left;
+
+.app footer .footer_box .link_box .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    align-items: stretch;
+    display: flex;
 }
+
+.app footer .footer_box .link_box .links .link {
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    display: flex;
+}
+
+.app footer .footer_box .link_box .links .link .link_label {
+    display: block;
+    color: #8e8e8e;
+    color: rgba(var(--f52, 142, 142, 142), 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: -2px 0 -3px;
+}
+
+.etc_box {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 8px 10px 0px 10px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    display: flex;
+}
+.etc_box .language_part {
+    display: block;
+    color: rgba(var(--i1d, 38, 38, 38), 1);
+    font-size: 12px;
+    line-height: 16px;
+}
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+select {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 0px;
+}
+
+.etc_box .language_part .language_box {
+    font-weight: 400;
+    color: #8e8e8e;
+    color: rgba(var(--f52, 142, 142, 142), 1);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    position: relative;
+    vertical-align: top;
+}
+
+.etc_box .language_part #language_select {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.etc_box .language_part .language_box div {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.copyright_part {
+    margin-left: 16px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.copyright_part .copyright {
+    display: block;
+    color: #8e8e8e;
+    color: rgba(var(--f52, 142, 142, 142), 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: -2px 0 -3px;
+}
+
 .margin-center {
     margin-left: auto;
     margin-right: auto;
 }
-/*
-.app .home main {
-    width: 88%;
-    height: 100%; 
-}*/
 
 .app .home article {
     width: inherit;

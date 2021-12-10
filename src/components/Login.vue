@@ -371,6 +371,7 @@ export default {
     width: 100%;
     height: 16px;
 }
+
 .row_center {
     margin-left: auto;
     margin-right: auto;
